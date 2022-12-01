@@ -1,0 +1,1 @@
+nextflow run workflow.nf -with-docker jrottenberg/ffmpeg:latest
