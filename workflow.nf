@@ -14,6 +14,6 @@ process convert {
     path "*.mkv"
 
     """
-    ffmpeg -i $input_file ${input_file}.mkv
+    ffmpeg -i "$input_file" "${input_file}.mkv"
     """
 }
