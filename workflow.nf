@@ -2,7 +2,7 @@ input_ch = Channel.watchPath( './input/*.avi' )
 //input_ch = Channel.fromPath( './input/*.avi' )
 
 process convert {
-    //errorStrategy "ignore"
+    errorStrategy "ignore"
     publishDir "output", mode: 'copy'
 
     container 'jrottenberg/ffmpeg:latest'
